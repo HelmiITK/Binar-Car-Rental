@@ -7,21 +7,69 @@
     <link href="dist/output.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar mulai -->
+    <header class="w-full mx-auto bg-transparent absolute top-0 left-0 flex
+                    items-center z-10">
+        <div class="flex justify-between items-center lg:w-full">
+            <!-- <div class="flex items-center relative"> -->
+                <div class="px-4 relative lg:ml-[138px]">
+                    <a href="#home" class="block py-5"><img src="/dist/img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="flex items-center px-4 lg:mr-9">
+                    <button id="hamburger" name="hamburger" type="button"
+                        class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+            
+                    <!-- navbar mode web mulai -->
+                    <nav id="nav-menu" class="hidden absolute py-8 pl-4 pr-20 bg-white shadow-lg rounded-lg right-4 top-20 
+                            lg:flex flex-row lg:static lg:bg-transparent lg:shadow-none lg:rounded-none lg:ml-24">
+                        <h1 class="font-binar font-bold text-black text-sm leading-tight m-4 mb-5 lg:hidden">BCR</h1>
+                        <ul class="px-4 lg:flex flex-row items-center gap-9 ">
+                            <li class="group lg:flex flex-row mb-4">
+                                <a href="#Our Servics" class="text-sm font-normal font-binar leading-tight text-black hover:text-green-400 lg:w-24 lg:flex justify-center">Our Services</a>
+                            </li>
+                            <li class="group lg:flex flex-row  mb-4">
+                                <a href="#Why Us" class="text-sm font-normal font-binar leading-tight text-black hover:text-green-400 lg:w-16 lg:flex justify-center">Why Us</a>
+                            </li>
+                            <li class="group  mb-4">
+                                <a href="#Testimonial" class="text-sm font-normal font-binar leading-tight text-black  hover:text-green-400">Testimony</a>
+                            </li>
+                            <li class="group lg:mb-4">
+                                <a href="#FAQ"" class="text-sm font-normal font-binar leading-tight text-black hover:text-green-400">FAQ</a>
+                            </li>
+                            <button class="w-[81px] h-9 px-3 py-2 bg-green-400 rounded-sm  inline-flex mt-4
+                                    shadow-sm shadow-black hover:bg-green-700 hover:opacity-80 transition duration-300
+                                    lg:mb-6">
+                                <a href="#" class="font-binar text-white font-bold leading-tight text-sm">Register</a>
+                            </button>
+                        </ul>
+                    </nav>
+                    <!-- navbar mode web selesai -->
+                </div>
+            
+        </div>
+    </header>
+    <!-- Navbar selesai -->
+
     <!-- Hero Section Mulai -->
-    <section id="home" class="bg-indigo-50">
+    <section id="home" class="bg-indigo-50 pl-4 pt-24">
         <div class="w-full">
             <!-- <div class="justify-between flex flex-col md:flex-row"> -->
                 <div class="md:flex-row lg:flex flex-row justify-between ">
-                    <div class="mt-10 self-center m-4 lg:pl-32">
+                    <div class="self-center lg:pl-32">
                         <h1 class="text-4xl text-black font-bold leading-[54px] mb-4 font-binar lg:max-w-[568px]">Sewa & Rental Mobil Terbaik di Kawasan Balikpapan</h1>
                         <p class="font-binar text-sm text-black font-light leading-tight mb-4 lg:max-w-[468px]">Selamat datang di Binar Car Rental. Kami menyediakan mobil 
                             kualitas terbaik dengan harga terjangkau. Selalu siap melayani 
                             kebutuhanmu untuk sewa mobil selama 24 jam.
                         </p>
                         <a href="#" class="font-binar h-9 px-3 py-2 bg-green-400 rounded-sm 
-                        border justify-center items-center gap-2.5 inline-flex
-                        text-white text-sm font-bold leading-tight
-                        hover:bg-green-600 hover:opacity-80 hover:shadow-lg 
+                        justify-center items-center gap-2.5 inline-flex
+                        text-white text-sm font-bold leading-tight shadow-sm shadow-slate-400
+                        hover:bg-green-600 hover:opacity-80
                         transition duration-300 ease-in-out">Mulai Sewa Mobil</a>
                     </div>
     
@@ -45,7 +93,7 @@
 
     <!-- Our Servics Mulai -->
     <section id="Our Servics">
-        <div class="md:flex-row lg:flex justify-between">
+        <div class="md:flex-row lg:flex justify-between mt-9">
 
             <!-- <div class="md:flex-row lg:flex"> -->
                 <!-- div gambar mulai -->
@@ -327,10 +375,10 @@
             <!-- navbar footer mulai -->
             <div class="">
                 <ul class="flex flex-col gap-4 font-binar text-black text-sm font-bold leading-tight">
-                    <li><a href="#Our Servics">Our services</a></li>
-                    <li><a href="#Why Us">Why Us</a></li>
-                    <li><a href="#Testimonial">Testimonial</a></li>
-                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#Our Servics" class="hover:text-green-400">Our services</a></li>
+                    <li><a href="#Why Us" class="hover:text-green-400">Why Us</a></li>
+                    <li><a href="#Testimonial" class="hover:text-green-400">Testimonial</a></li>
+                    <li><a href="#FAQ" class="hover:text-green-400">FAQ</a></li>
                 </ul>
             </div>
             <!-- navbar footer selesai -->
@@ -453,6 +501,6 @@
     </section>
     <!-- Footer Selesai -->
 
-
+    <script src="./dist/js/script.js"></script>
 </body>
 </html>
